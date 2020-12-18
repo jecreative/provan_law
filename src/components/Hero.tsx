@@ -45,7 +45,7 @@ const Hero = () => {
   )
 }
 
-const StyledHero = styled.section`
+const StyledHero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
