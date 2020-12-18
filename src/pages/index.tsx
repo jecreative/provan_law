@@ -70,6 +70,7 @@ const Hero = styled.div`
   }
   @media (max-width: 500px) {
     padding: 0 1rem;
+    height: 84vh;
   }
   .overlay {
     position: absolute;
