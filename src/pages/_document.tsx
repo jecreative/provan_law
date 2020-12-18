@@ -16,6 +16,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          {/* <!-- link manifest.json --> */}
+          <link rel='manifest' href='/manifest.json' />
+          {/* <!-- this sets the color of url bar  --> */}
+          <meta name='theme-color' content='#2f4c65' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
           <link
             href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap'
@@ -28,7 +32,7 @@ class MyDocument extends Document {
             crossOrigin='anonymous'
           />
         </Head>
-        <body className='font-body' style={{ backgroundColor: '#DAE0E6' }}>
+        <body>
           <Main />
           <NextScript />
         </body>

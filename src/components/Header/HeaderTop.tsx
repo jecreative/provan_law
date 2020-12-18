@@ -39,7 +39,7 @@ const StyledHeaderTop = styled.div`
   }
   @media (max-width: 500px) {
     padding: 0 0.75rem;
-    font-size: 0.6rem;
+    font-size: 0.57rem;
     letter-spacing: 0.01rem;
   }
 
