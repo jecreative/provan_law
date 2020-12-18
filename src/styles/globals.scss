@@ -28,3 +28,11 @@ img {
 #disqus_thread {
   width: 100%;
 }
+
+.mobileNav {
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+.mobileNav.active {
+  transform: translateX(0%);
+}

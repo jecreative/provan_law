@@ -53,7 +53,7 @@ const HeaderCenter = ({ router }) => {
         <i className={mobileNav ? 'fas fa-plus active' : 'fas fa-plus'}></i>
       </MobileNavToggle>
       {/* Mobile Nav */}
-      <MobileNav className={mobileNav ? 'active' : ''}>
+      <MobileNav className={mobileNav ? 'mobileNav active' : 'mobileNav'}>
         <h3>Menu</h3>
         <ul>
           <Link href='/'>
@@ -234,8 +234,7 @@ const MobileNav = styled.nav`
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -245,9 +244,7 @@ const MobileNav = styled.nav`
   @media (min-width: 925px) {
     display: none;
   }
-  &.active {
-    transform: translateX(0%);
-  }
+
   h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
