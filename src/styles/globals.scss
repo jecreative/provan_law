@@ -9,7 +9,16 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden !important;
+  width: 100%;
+  max-width: 100vw;
+}
+
+@media (max-width: 925px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden !important;
+  }
 }
 
 a {
