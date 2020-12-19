@@ -1,35 +1,51 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components'
+import { Link as ScrollLink } from 'react-scroll'
 
 const HeaderBottom = ({ router }) => {
   return (
     <Nav>
       <ul>
-        <Link href='/'>
-          <a className={router.pathname === '/' ? 'active' : undefined}>
-            <li>Home</li>
-          </a>
-        </Link>
+        <ScrollLink
+          to='header'
+          className={router.pathname === '/' ? 'active' : undefined}
+        >
+          <li>Home</li>
+        </ScrollLink>
 
-        <Link href='/about'>
-          <a className={router.pathname === '/about' ? 'active' : undefined}>
-            <li>About Us</li>
-          </a>
-        </Link>
+        <ScrollLink
+          to='about'
+          spy={true}
+          smooth={true}
+          duration={600}
+          exact='true'
+          offset={-25}
+        >
+          <li>About Us</li>
+        </ScrollLink>
 
-        <Link href='/practiceareas'>
-          <a>
-            <li>Practice Areas</li>
-          </a>
-        </Link>
+        <ScrollLink
+          to='services'
+          spy={true}
+          smooth={true}
+          duration={600}
+          exact='true'
+          offset={-25}
+        >
+          <li>Practice Areas</li>
+        </ScrollLink>
 
-        <Link href='/casestudies'>
-          <a>
-            {' '}
-            <li>Attorneys</li>
-          </a>
-        </Link>
+        <ScrollLink
+          to='attorneys'
+          spy={true}
+          smooth={true}
+          duration={600}
+          exact='true'
+          offset={0}
+        >
+          <li>Attorneys</li>
+        </ScrollLink>
 
         <Link href='/post'>
           <a>
@@ -37,12 +53,16 @@ const HeaderBottom = ({ router }) => {
           </a>
         </Link>
 
-        <Link href='/contact'>
-          <a>
-            {' '}
-            <li>Contact Us</li>
-          </a>
-        </Link>
+        <ScrollLink
+          to='contact'
+          spy={true}
+          smooth={true}
+          duration={600}
+          exact='true'
+          offset={-25}
+        >
+          <li>Contact Us</li>
+        </ScrollLink>
       </ul>
     </Nav>
   )

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import styled from 'styled-components'
+import { Link as ScrollLink } from 'react-scroll'
 
 import HeaderBottom from './HeaderBottom'
 
@@ -56,42 +57,61 @@ const HeaderCenter = ({ router }) => {
       <MobileNav className={mobileNav ? 'mobileNav active' : 'mobileNav'}>
         <h3>Menu</h3>
         <ul>
-          <Link href='/'>
-            <a className={router.pathname === '/' ? 'active' : undefined}>
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fas fa-home'></i>
-                Home
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='Home'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fas fa-home'></i>
+              Home
+            </li>
+          </ScrollLink>
 
-          <Link href='/about'>
-            <a className={router.pathname === '/about' ? 'active' : undefined}>
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fas fa-info'></i>
-                About
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='about'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fas fa-info'></i>
+              About
+            </li>
+          </ScrollLink>
 
-          <Link href='/practiceareas'>
-            <a>
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fas fa-balance-scale-left'></i>
-                Practice Areas
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='services'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fas fa-balance-scale-left'></i>
+              Practice Areas
+            </li>
+          </ScrollLink>
 
-          <Link href='/casestudies'>
-            <a>
-              {' '}
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fas fa-book'></i>
-                Case Studies
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='attorneys'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fas fa-users'></i>
+              Attorney
+            </li>
+          </ScrollLink>
 
           <Link href='/post'>
             <a>
@@ -102,15 +122,19 @@ const HeaderCenter = ({ router }) => {
             </a>
           </Link>
 
-          <Link href='/contact'>
-            <a>
-              {' '}
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fas fa-paper-plane'></i>
-                Contact
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fas fa-paper-plane'></i>
+              Contact
+            </li>
+          </ScrollLink>
         </ul>
       </MobileNav>
     </StyledHeaderCenter>
@@ -220,7 +244,7 @@ const MobileNavToggle = styled.div`
   .fas.fa-plus.active {
     transform: rotate(-45deg);
   }
-  @media (min-width: 925px) {
+  @media (min-width: 926px) {
     display: none;
   }
 `
@@ -241,7 +265,7 @@ const MobileNav = styled.nav`
   justify-content: flex-start;
   padding: 40px 20px;
   z-index: 100;
-  @media (min-width: 925px) {
+  @media (min-width: 926px) {
     display: none;
   }
 
@@ -266,6 +290,7 @@ const MobileNav = styled.nav`
       border-radius: 10px;
       color: #2c3a4d;
       transition: all 0.2s ease-in-out;
+      cursor: pointer;
       &:hover {
         background-color: rgba(194, 67, 67, 0.228);
       }

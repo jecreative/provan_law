@@ -5,7 +5,7 @@ const HeaderTop = () => {
     <StyledHeaderTop>
       <div className='headerTop_left'>
         <i className='fas fa-map-marker-alt'></i>
-        <p>8885 Rio San Deigo Dr, Suite 367, 92108</p>
+        <p>8885 Rio San Diego Dr, Suite 367, 92108</p>
         <span>|</span>
         <i className='fas fa-envelope'></i>
         <p>
