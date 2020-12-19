@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import Hero from '../components/Hero'
 import PracticeAreas from '../components/PracticeAreas'
+import ExperienceBanner from '../components/ExperienceBanner'
+import Attorneys from '../components/Attorneys'
 
 const Home: React.FC<{}> = () => {
   return (
@@ -13,6 +15,8 @@ const Home: React.FC<{}> = () => {
       </Head>
       <Hero />
       <PracticeAreas />
+      <ExperienceBanner />
+      <Attorneys />
     </>
   )
 }
