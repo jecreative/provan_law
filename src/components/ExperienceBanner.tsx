@@ -88,7 +88,7 @@ const StyledExperienceBanner = styled.section`
       border: 2px solid #c24343;
       padding: 12.5px 15px;
       background: #c24343;
-      color: white;
+      color: white !important;
       font-size: 0.9rem;
       border-radius: 2px;
       transition: all 0.1s ease-in-out;
@@ -96,7 +96,7 @@ const StyledExperienceBanner = styled.section`
       &:hover {
         border: 2px solid white;
         background: white;
-        color: #c24343;
+        color: #c24343 !important;
       }
     }
   }

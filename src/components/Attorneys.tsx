@@ -26,7 +26,7 @@ const Attorneys = () => {
   return (
     <StyledAttorneys id='attorneys'>
       <div className='attorneys-header'>
-        <h3>Our Attorneys</h3>
+        <h1>Our Attorneys</h1>
         <hr />
       </div>
       <div className='attorney-cards'>
@@ -157,7 +157,7 @@ const StyledAttorneys = styled.section`
     margin-top: 2rem;
     margin-bottom: 4rem;
 
-    h3 {
+    h1 {
       font-size: 2rem;
       color: #414141;
       margin-bottom: 0.5rem;
@@ -172,8 +172,8 @@ const StyledAttorneys = styled.section`
     @media (max-width: 768px) {
       margin-top: 1rem;
       margin-bottom: 1.5rem;
-      padding-left: 3rem;
-      h3 {
+      /* padding-left: 3rem; */
+      h1 {
         font-size: 1.6rem;
         color: #414141;
         margin-bottom: 0.5rem;
@@ -210,6 +210,11 @@ const StyledAttorneys = styled.section`
       @media (max-width: 768px) {
         width: 300px;
         height: 375px;
+      }
+      @media (max-width: 768px) {
+        width: 300px;
+        height: 375px;
+        margin-bottom: 1rem;
       }
       .attorney-card-top {
         width: 100%;
