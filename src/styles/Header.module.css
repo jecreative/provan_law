@@ -1,0 +1,352 @@
+.header {
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Top */
+
+.header_top {
+  height: 6vh;
+  background-color: #2f4c65;
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  font-size: 0.8rem;
+}
+@media (max-width: 920px) {
+  .header_top {
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.01rem;
+  }
+}
+@media (max-width: 500px) {
+  .header_top {
+    padding: 0 0.75rem;
+    font-size: 0.57rem;
+    letter-spacing: 0.01rem;
+  }
+}
+
+.headerTop_left {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+.headerTop_left > i {
+  margin-right: 0.5rem;
+}
+.headerTop_left > span {
+  margin: 0 1.5rem;
+}
+@media (max-width: 920px) {
+  .headerTop_left {
+    flex: 1;
+    justify-content: center;
+  }
+  .headerTop_left > span {
+    margin: 0 0.5rem;
+  }
+}
+
+.headerTop_right {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+@media (max-width: 920px) {
+  .headerTop_right {
+    display: none;
+  }
+}
+
+.headerTop_right > i {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  margin: 0.5rem;
+  border: solid white;
+  border-width: thin;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.headerTop_right > i:hover {
+  background: white;
+  color: #2f4c65;
+}
+
+/* Header Center (Desktop/Tablet) */
+
+.header_center {
+  width: 100%;
+  height: 10vh;
+  border-bottom: solid#d8d8d8;
+  border-bottom-width: thin;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 0 3rem;
+  position: relative;
+}
+@media (max-width: 400px) {
+  .header_center {
+    padding: 0 1rem;
+  }
+}
+
+.headerCenter_left {
+  flex: 20%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 925px) {
+  .headerCenter_left {
+    flex: 40%;
+  }
+}
+.headerCenter_left img {
+  width: 200px;
+  height: 100px;
+}
+
+.headerCenter_right {
+  flex: 80%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 925px) {
+  .headerCenter_right {
+    display: none;
+  }
+}
+
+.headerCenter_right i {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #c24343;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #c24343;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  margin: 0 1rem;
+}
+
+.headerCenter_right i:hover {
+  background: #c24343;
+  color: white;
+}
+
+.headerCenter_right .info p {
+  color: #2f4c65;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.headerCenter_right span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #555555;
+  margin-top: 0.15rem;
+}
+
+.headerCenter_right .consultBtn li {
+  border: 2px solid #c24343;
+  padding: 12.5px 15px;
+  margin-left: 2.5rem;
+  background: #c24343;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.headerCenter_right .consultBtn li:hover {
+  border: 2px solid #c24343;
+  background: white;
+  color: #c24343;
+}
+
+/* Header Bottom */
+.main_nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 0 3rem;
+  font-weight: 600;
+}
+@media (max-width: 925px) {
+  .main_nav {
+    display: none;
+  }
+}
+
+.main_nav ul {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #8c8c8c;
+}
+
+.main_nav ul li {
+  height: 10vh;
+  display: grid;
+  place-items: center;
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+}
+
+.main_nav ul li:hover {
+  border-bottom: 2px solid #c24343;
+  color: #c24343;
+}
+
+.main_nav ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9375em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #8c8c8c;
+  pointer-events: all;
+}
+
+/*  Mobile Nav & Toggle */
+
+.mobile_nav_toggle {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 926px) {
+  .mobile_nav_toggle {
+    display: none;
+  }
+}
+
+.mobile_nav {
+  background: white;
+  height: 84vh;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  z-index: 100;
+  overflow: none;
+}
+@media (min-width: 926px) {
+  .mobile_nav,
+  .mobile_nav_active {
+    display: none !important;
+  }
+}
+
+.mobile_nav_active {
+  transform: translateX(0%);
+  background: white;
+  height: 84vh;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  z-index: 100;
+  overflow: none;
+}
+
+.mobile_nav_active h3,
+.mobile_nav h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #5e5e5e;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0 0.5rem;
+}
+.mobile_nav_active ul,
+.mobile_nav ul {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.mobile_nav_active ul li,
+.mobile_nav ul li {
+  height: 8.5vh;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  color: #2c3a4d;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.mobile_nav_active ul li:hover,
+.mobile_nav ul li:hover {
+  background-color: rgba(194, 67, 67, 0.228);
+}
+
+.mobile_nav_active ul li i,
+.mobile_nav ul li i {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: #c24343;
+  color: white;
+}
