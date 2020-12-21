@@ -38,10 +38,41 @@ img {
   width: 100%;
 }
 
+.toggleActive {
+  color: #c24343 !important;
+  border-bottom: 2px solid #c24343;
+  cursor: pointer;
+}
+
 .mobileNav {
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
 }
-.mobileNav.active {
+.mobileNav.mobileNavActive {
   transform: translateX(0%);
+}
+
+.paginate {
+  border: 1px solid #2f4c65;
+  color: #2f4c65;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  margin: 0 0.25rem;
+  cursor: pointer;
+}
+.paginate:hover {
+  background: #2f4c65;
+  color: white;
+}
+.paginate.activePosts {
+  background: #2f4c65;
+  color: white !important;
+}
+
+@media (max-width: 620px) {
+  .paginate {
+    margin: 1.5rem 0;
+  }
 }

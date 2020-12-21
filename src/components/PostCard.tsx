@@ -12,7 +12,7 @@ const PostCard: React.FC<{ post: Post }> = (props) => {
 
   return (
     <div className={styles.post}>
-      <Link href='/post/[slug]' as={`/post/${post.slug}`}>
+      <Link href='/[slug]' as={`/${post.slug}`}>
         <a style={{ margin: '1rem 0rem' }}>{post.title}</a>
       </Link>
 
