@@ -51,10 +51,14 @@ const HeaderCenter = ({ router }) => {
       </div>
       {/* Mobile Nav Toggle */}
       <MobileNavToggle onClick={() => setMobileNav(!mobileNav)}>
-        <i className={mobileNav ? 'fas fa-plus active' : 'fas fa-plus'}></i>
+        <i
+          className={mobileNav ? 'fas fa-plus toggleActive' : 'fas fa-plus'}
+        ></i>
       </MobileNavToggle>
       {/* Mobile Nav */}
-      <MobileNav className={mobileNav ? 'mobileNav active' : 'mobileNav'}>
+      <MobileNav
+        className={mobileNav ? 'mobileNav mobileNavActive' : 'mobileNav'}
+      >
         <h3>Menu</h3>
         <ul>
           <ScrollLink
@@ -105,22 +109,27 @@ const HeaderCenter = ({ router }) => {
             smooth={true}
             duration={600}
             exact='true'
-            offset={-25}
+            offset={0}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
               <i className='fas fa-users'></i>
-              Attorney
+              Attorneys
             </li>
           </ScrollLink>
 
-          <Link href='/post'>
-            <a>
-              <li onClick={() => setMobileNav(!mobileNav)}>
-                <i className='fab fa-microblog'></i>
-                Blog
-              </li>
-            </a>
-          </Link>
+          <ScrollLink
+            to='news'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={0}
+          >
+            <li onClick={() => setMobileNav(!mobileNav)}>
+              <i className='fab fa-microblog'></i>
+              News
+            </li>
+          </ScrollLink>
 
           <ScrollLink
             to='contact'
@@ -241,8 +250,9 @@ const MobileNavToggle = styled.div`
     transform: rotate(0deg);
     transition: all 0.1s ease-in-out;
   }
-  .fas.fa-plus.active {
+  .fas.fa-plus.toggleActive {
     transform: rotate(-45deg);
+    border-bottom: transparent;
   }
   @media (min-width: 926px) {
     display: none;

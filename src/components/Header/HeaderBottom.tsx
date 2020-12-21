@@ -7,62 +7,101 @@ const HeaderBottom = ({ router }) => {
   return (
     <Nav>
       <ul>
-        <ScrollLink
-          to='header'
-          className={router.pathname === '/' ? 'active' : undefined}
-        >
-          <li>Home</li>
-        </ScrollLink>
-
-        <ScrollLink
-          to='about'
-          spy={true}
-          smooth={true}
-          duration={600}
-          exact='true'
-          offset={-25}
-        >
-          <li>About Us</li>
-        </ScrollLink>
-
-        <ScrollLink
-          to='services'
-          spy={true}
-          smooth={true}
-          duration={600}
-          exact='true'
-          offset={-25}
-        >
-          <li>Practice Areas</li>
-        </ScrollLink>
-
-        <ScrollLink
-          to='attorneys'
-          spy={true}
-          smooth={true}
-          duration={600}
-          exact='true'
-          offset={0}
-        >
-          <li>Attorneys</li>
-        </ScrollLink>
-
-        <Link href='/post'>
-          <a>
-            <li>News</li>
-          </a>
+        <Link href='/'>
+          <li
+            className={router.pathname === '/' ? 'active' : ''}
+            style={{ cursor: 'pointer' }}
+          >
+            Home
+          </li>
         </Link>
 
-        <ScrollLink
-          to='contact'
-          spy={true}
-          smooth={true}
-          duration={600}
-          exact='true'
-          offset={-25}
-        >
-          <li>Contact Us</li>
-        </ScrollLink>
+        {router.pathname.includes('news') ? (
+          <Link href='/#about'>
+            <li>ABOUT US</li>
+          </Link>
+        ) : (
+          <ScrollLink
+            to='about'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li>About Us</li>
+          </ScrollLink>
+        )}
+
+        {router.pathname.includes('news') ? (
+          <Link href='/#services'>
+            <li>PRACTICE AREAS</li>
+          </Link>
+        ) : (
+          <ScrollLink
+            to='services'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li>Practice Areas</li>
+          </ScrollLink>
+        )}
+
+        {router.pathname.includes('news') ? (
+          <Link href='/#attorneys'>
+            <li>ATTORNEYS</li>
+          </Link>
+        ) : (
+          <ScrollLink
+            to='attorneys'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-30}
+          >
+            <li>Attorneys</li>
+          </ScrollLink>
+        )}
+
+        {router.pathname.includes('news') ? (
+          <Link href='/#news'>
+            <li className={router.pathname.includes('news') ? 'active' : ''}>
+              NEWS
+            </li>
+          </Link>
+        ) : (
+          <ScrollLink
+            to='news'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={0}
+          >
+            <li>News</li>
+          </ScrollLink>
+        )}
+
+        {router.pathname.includes('news') ? (
+          <Link href='/#contact'>
+            <li>CONTACT</li>
+          </Link>
+        ) : (
+          <ScrollLink
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={600}
+            exact='true'
+            offset={-25}
+          >
+            <li>Contact</li>
+          </ScrollLink>
+        )}
       </ul>
     </Nav>
   )
@@ -85,11 +124,13 @@ const Nav = styled.nav`
     height: 100%;
     display: flex;
     align-items: center;
+    color: #8c8c8c;
     li {
       height: 100%;
       display: grid;
       place-items: center;
       padding: 0.4rem 1.5rem;
+      cursor: pointer;
       &:hover {
         border-bottom: 2px solid #c24343;
         color: #c24343;
@@ -105,10 +146,6 @@ const Nav = styled.nav`
       cursor: pointer;
       color: #8c8c8c;
       pointer-events: all;
-      &.active {
-        color: #c24343;
-        border-bottom: 2px solid #c24343;
-      }
     }
   }
 `
