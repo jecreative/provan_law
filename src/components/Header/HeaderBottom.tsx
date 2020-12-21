@@ -12,7 +12,7 @@ const HeaderBottom = ({ router }) => {
             className={router.pathname === '/' ? 'active' : ''}
             style={{ cursor: 'pointer' }}
           >
-            Home
+            HOME
           </li>
         </Link>
 
