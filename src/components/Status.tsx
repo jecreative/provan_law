@@ -52,7 +52,17 @@ const StatusSection = styled.section`
   }
   @media (max-width: 500px) {
     flex-wrap: wrap;
+    height: 50vh;
     justify-content: space-evenly;
+    padding: 0 6rem;
+  }
+  @media (max-width: 499px) {
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: space-evenly;
+    padding: 0 6rem;
+  }
+  @media (max-width: 499px) {
     padding: 0 3rem;
   }
   .item {

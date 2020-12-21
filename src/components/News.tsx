@@ -193,10 +193,9 @@ const NewsSection = styled.section`
           font-size: 0.9rem;
           font-weight: 400;
           color: #4f4f4f;
-          margin-bottom: 0.5rem;
           text-shadow: 0 0 5px rgba(58, 58, 58, 0.1),
             0 0 2px rgba(58, 58, 58, 0.1);
-          margin-bottom: 1.5rem;
+          margin-bottom: 0.75rem;
         }
         .news_btn {
           border: 2px solid #c24343;

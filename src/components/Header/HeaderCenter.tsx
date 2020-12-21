@@ -150,7 +150,7 @@ const HeaderCenter = ({ router }) => {
             smooth={true}
             duration={600}
             exact='true'
-            offset={-25}
+            offset={30}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
               <i className='fas fa-paper-plane'></i>
