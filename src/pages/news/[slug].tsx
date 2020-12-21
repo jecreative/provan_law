@@ -43,8 +43,6 @@ const PostSlug: React.FC<{ post: Post }> = (props) => {
   const { post } = props
   const [enableLoadComments, setEnableLoadComments] = useState<boolean>(true)
 
-  console.log(post)
-
   const router = useRouter()
   if (router.isFallback) {
     return (
@@ -96,7 +94,9 @@ const PostSlug: React.FC<{ post: Post }> = (props) => {
         ></div>
         <div className='tags'>
           {post.tags.map((tag) => (
-            <p className='tag'>{tag.name}</p>
+            <p className='tag' key={tag.id}>
+              {tag.name}
+            </p>
           ))}
         </div>
         <hr />
@@ -150,8 +150,28 @@ const StyledPost = styled.section`
     margin-bottom: 1rem;
   }
   .body {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    width: 100%;
+    height: 100%;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+    img {
+      width: 100%;
+      max-height: 500px;
+      margin: 2rem 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    li,
+    p {
+      margin-bottom: 0.75rem;
+    }
   }
   .tags {
     margin: 2rem 0rem;

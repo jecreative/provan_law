@@ -101,7 +101,8 @@ const News: React.FC<{ posts: Post[] }> = (props) => {
 
 const NewsSection = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 600px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,18 +154,22 @@ const NewsSection = styled.section`
     gap: 1rem;
     .news_card {
       width: 325px;
-      height: 450px;
+      height: 425px;
       box-shadow: 0 0 20px rgba(50, 50, 50, 0.3), 0 0 20px rgba(50, 50, 50, 0.1);
       .card_top {
         overflow: hidden;
-        height: 225px;
-        position: relative;
+        height: 50%;
+        display: flex;
+        align-content: stretch;
+        align-items: stretch;
+        justify-content: center;
         img {
           object-fit: cover;
+          object-position: center;
         }
       }
       .card_bottom {
-        padding: 15px;
+        padding: 12.5px 15px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

@@ -80,7 +80,7 @@ const HeaderBottom = ({ router }) => {
             smooth={true}
             duration={600}
             exact='true'
-            offset={0}
+            offset={-80}
           >
             <li>News</li>
           </ScrollLink>
@@ -97,7 +97,7 @@ const HeaderBottom = ({ router }) => {
             smooth={true}
             duration={600}
             exact='true'
-            offset={-25}
+            offset={20}
           >
             <li>Contact</li>
           </ScrollLink>

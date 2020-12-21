@@ -7,6 +7,7 @@ import ExperienceBanner from '../components/ExperienceBanner'
 import Attorneys from '../components/Attorneys'
 import StatusBanner from '../components/Status'
 import News from '../components/News'
+import Contact from '../components/Contact'
 
 import { Post } from '../types'
 
@@ -45,6 +46,7 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
       <Attorneys />
       <StatusBanner />
       <News posts={posts} />
+      <Contact />
     </>
   )
 }

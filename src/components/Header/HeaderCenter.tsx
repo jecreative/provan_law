@@ -44,9 +44,22 @@ const HeaderCenter = ({ router }) => {
           </p>
         </div>
         <div className='consultBtn'>
-          <Link href='/contact'>
-            <a>Free Consultation</a>
-          </Link>
+          {router.pathname.includes('news') ? (
+            <Link href='/#contact'>
+              <li>Free Consultation</li>
+            </Link>
+          ) : (
+            <ScrollLink
+              to='contact'
+              spy={true}
+              smooth={true}
+              duration={600}
+              exact='true'
+              offset={20}
+            >
+              <li>Free Consultation</li>
+            </ScrollLink>
+          )}
         </div>
       </div>
       {/* Mobile Nav Toggle */}
@@ -221,7 +234,7 @@ const StyledHeaderCenter = styled.div`
         margin-top: 0.15rem;
       }
     }
-    .consultBtn a {
+    .consultBtn li {
       border: 2px solid #c24343;
       padding: 12.5px 15px;
       margin-left: 2.5rem;
@@ -230,6 +243,7 @@ const StyledHeaderCenter = styled.div`
       font-size: 0.9rem;
       border-radius: 2px;
       transition: all 0.1s ease-in-out;
+      cursor: pointer;
       &:hover {
         border: 2px solid #c24343;
         background: white;
@@ -262,21 +276,26 @@ const MobileNavToggle = styled.div`
 const MobileNav = styled.nav`
   background: white;
   height: 84vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 10vh;
   bottom: 0;
   left: 0;
   right: 0;
-
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: 40px 20px;
   z-index: 100;
+  overflow: none;
   @media (min-width: 926px) {
     display: none;
+  }
+  &.mobileNavActive {
+    transform: translateX(0%);
   }
 
   h3 {

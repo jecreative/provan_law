@@ -49,7 +49,7 @@ const StyledHero = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 74vh;
+  height: 600px;
   position: relative;
   padding: 0 15rem;
   display: flex;
