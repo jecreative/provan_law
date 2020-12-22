@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link as ScrollLink } from 'react-scroll'
 
 import styles from '../styles/Hero.module.css'

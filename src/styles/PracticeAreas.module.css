@@ -1,0 +1,262 @@
+.practice_areas {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13.25rem;
+  height: 100%;
+  margin-bottom: 200px;
+}
+@media (max-width: 1130px) {
+  .practice_areas {
+    padding: 0 3.75rem;
+    height: 100%;
+  }
+}
+@media (max-width: 920px) {
+  .practice_areas {
+    padding: 0 3.75rem;
+    height: 60%;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .practice_areas {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .practice_areas {
+    padding: 0;
+  }
+}
+
+/* Info Card */
+
+.info_card {
+  width: 70%;
+  height: 40%;
+  position: absolute;
+  transform: translateY(-95%);
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+@media (max-width: 1130px) {
+  .info_card {
+    height: 40%;
+    transform: translateY(-100%);
+  }
+}
+@media (max-width: 920px) {
+  .info_card {
+    display: none;
+  }
+}
+.info_card i {
+  color: #c24343;
+  margin-right: 0.5rem;
+}
+.info_card h3 {
+  color: #414141;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.info_card p {
+  color: #505050;
+  font-size: 0.9rem;
+}
+.info_card .info_card_left {
+  border-right: 1px solid #9f9f9f;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.info_card .info_card_center {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.info_card .info_card_right {
+  border-left: 1px solid #9f9f9f;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Services */
+
+.services {
+  width: 100%;
+  height: 70%;
+  text-align: left;
+  position: relative;
+  transform: translateY(35%);
+}
+@media (max-width: 920px) {
+  .services {
+    transform: translateY(10%);
+    height: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .services .services_header {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .services .services_header h3 {
+    font-size: 2rem;
+    color: #414141;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(58, 58, 58, 0.1), 0 0 2px rgba(58, 58, 58, 0.1);
+  }
+  .services .services_header hr {
+    width: 150px;
+    border: none;
+    background: #c24343;
+    height: 2px;
+  }
+  .services_body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 1.5rem;
+    width: 100%;
+  }
+  .service_item {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.75rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .service_item .service_item_top {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .service_item .service_item_top i {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #c24343;
+    padding: 10px;
+    color: #c24343;
+    margin-right: 0.5rem;
+  }
+
+  .service_item .service_item_top h3 {
+    margin-bottom: 0.3rem;
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+  }
+
+  .service_item_bottom {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .service_item_bottom p {
+    color: #282828;
+    font-size: 0.85rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .services {
+    transform: translateY(0%);
+    height: 100%;
+    padding: 1.5rem;
+    padding-top: 2rem;
+  }
+  .services .services_header {
+    margin: 2rem 0;
+  }
+  .services .services_header h3 {
+    font-size: 1.4rem;
+    color: #414141;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(58, 58, 58, 0.1), 0 0 2px rgba(58, 58, 58, 0.1);
+  }
+  .services .services_header hr {
+    width: 150px;
+    border: none;
+    background: #c24343;
+    height: 2px;
+  }
+  .services_body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .service_item {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .service_item .service_item_top {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+  }
+  .service_item .service_item_top i {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #939393;
+    padding: 10px;
+    color: #c24343;
+    margin-right: 0.5rem;
+  }
+
+  .service_item .service_item_top h3 {
+    margin-bottom: 0.3rem;
+    color: #414141;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    text-shadow: 0 0 5px rgba(58, 58, 58, 0.1), 0 0 2px rgba(58, 58, 58, 0.1);
+  }
+
+  .service_item_bottom {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service_item_bottom p {
+    color: #282828;
+    font-size: 0.85rem;
+    width: 100%;
+    text-shadow: 0 0 5px rgba(58, 58, 58, 0.1), 0 0 2px rgba(58, 58, 58, 0.1);
+  }
+}
