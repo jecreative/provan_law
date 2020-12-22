@@ -27,11 +27,28 @@
 }
 
 .footer_right i {
-  margin: 0 0.75rem;
+  margin: 0rem 0.75rem;
   border: 1px solid white;
-  width: 30px;
   height: 30px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 670px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_right {
+    display: none;
+  }
+  .footer_left {
+    flex-basis: 100%;
+  }
 }

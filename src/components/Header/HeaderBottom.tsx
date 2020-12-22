@@ -10,7 +10,7 @@ const HeaderBottom = ({ router }) => {
         <Link href='/'>
           <li
             style={{ cursor: 'pointer' }}
-            className={router.pathname === '/' && styles.active}
+            className={router.pathname === '/' ? styles.active : ''}
           >
             <a>HOME</a>
           </li>
