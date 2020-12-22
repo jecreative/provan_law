@@ -1,0 +1,9 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Contact Me",
+      "actions": [{ "type": "email", "to": "jordanesguerra93@gmail.com" }],
+      "fields": { "email": { "required": true, "type": "email" } }
+    }
+  }
+}

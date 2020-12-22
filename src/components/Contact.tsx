@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useForm, ValidationError } from '@formspree/react'
 
 import styles from '../styles/Contact.module.css'
 
 const Contact = () => {
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState('')
-  const [practiceArea, setPracticeArea] = useState('')
-  const [message, setMessage] = useState('')
+  const [status, setStatus] = useState<Object>({})
+
+  const [state, handleSubmit] = useForm('contact')
 
   return (
     <section className={styles.contact} id='contact'>
@@ -37,46 +37,58 @@ const Contact = () => {
       </div>
       <div className={styles.contact_right}>
         <h3>Free Consultation</h3>
-        <form>
+
+        <form onSubmit={handleSubmit}>
           <div className={styles.form_group}>
             <label htmlFor='name'></label>
             <input
               className={styles.name}
+              id='name'
               type='text'
-              value={name}
+              name='name'
+              required
               placeholder='Name'
-              onChange={(e) => setName(e.target.value)}
             />
             <label htmlFor='phone'></label>
             <input
               id='phone'
-              type='number'
-              value={phone}
-              placeholder='Phone'
-              onChange={(e) => setPhone(e.target.value)}
-            />
-          </div>
-
-          <div className={styles.form_group} id='practice-area'>
-            <label htmlFor='practice-area'></label>
-            <input
-              id='practice-areas'
               type='text'
-              value={practiceArea}
-              placeholder='Practice Area'
-              onChange={(e) => setPracticeArea(e.target.value)}
+              name='phone'
+              required
+              placeholder='Phone'
             />
           </div>
-          <div className={styles.form_group} id='message'>
+          <div className={styles.form_group}>
+            <label htmlFor='email'></label>
+            <input
+              id='email'
+              type='email'
+              name='email'
+              placeholder='Email'
+              required
+            />
+          </div>
+          <div className={styles.form_group}>
             <label htmlFor='message'></label>
             <textarea
               id='message'
-              value={message}
               placeholder='Message'
-              onChange={(e) => setMessage(e.target.value)}
+              name='message'
+              required
             ></textarea>
           </div>
-          <button type='submit'>Send Message</button>
+          {state.succeeded ? (
+            <p style={{ fontSize: '1.2rem' }}>
+              Thank you for your interest!
+              <span style={{ display: 'block', marginTop: '.5rem' }}>
+                Will be in touch within the next 48 hours.
+              </span>
+            </p>
+          ) : (
+            <button disabled={state.submitting} type='submit'>
+              Send Message
+            </button>
+          )}
         </form>
       </div>
     </section>
