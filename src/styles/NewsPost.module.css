@@ -1,0 +1,103 @@
+.post {
+  position: relative;
+  min-height: 90vh;
+  padding: 0 20rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid#d8d8d8;
+}
+@media (max-width: 1200px) {
+  .post {
+    padding: 0 15rem;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .post {
+    padding: 0 12rem;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 920px) {
+  .post {
+    padding: 0 8rem;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .post {
+    min-height: 100vh;
+    padding: 0 3rem;
+    padding-top: 3rem;
+    display: flex;
+  }
+}
+.post h3 {
+  color: rgba(14, 30, 37, 0.54);
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 1rem;
+}
+.post h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.body {
+  width: 100%;
+  height: 100%;
+}
+.body p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.body img {
+  width: 100%;
+  max-height: 500px;
+  margin: 2rem 0;
+}
+.body h1,
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6,
+.body strong,
+.body li,
+.body p {
+  margin-bottom: 0.75rem;
+}
+.tags {
+  margin: 2rem 0rem;
+}
+.tag {
+  background: gray;
+  display: inline;
+  margin-right: 1rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.9rem;
+}
+.post hr {
+  margin: 2rem 0rem;
+  margin-bottom: 4rem;
+}
+.comments_btn {
+  width: 200px;
+  text-align: left;
+  padding: 1rem 2rem;
+  text-align: center;
+  border: 2px solid #c24343;
+  cursor: pointer;
+  color: #c24343;
+}
+.comments_btn:hover {
+  background: #c24343;
+  color: white;
+}
+
+.comments {
+  margin-top: 2rem;
+}

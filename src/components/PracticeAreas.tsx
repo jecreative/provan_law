@@ -36,7 +36,7 @@ const PracticeAreas = () => {
 
       <div className={styles.services}>
         <div className={styles.services_header}>
-          <h3>Our Practice Areas</h3>
+          <h1>Our Practice Areas</h1>
           <hr />
         </div>
 

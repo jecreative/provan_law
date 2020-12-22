@@ -6,7 +6,7 @@ import styles from '../styles/Hero.module.css'
 const Hero = () => {
   return (
     <section
-      style={{ backgroundImage: 'url("images/hero_bg.jpg")' }}
+      style={{ backgroundImage: 'url("images/hero_bg.webp")' }}
       id={styles.hero}
     >
       <div className={styles.overlay}></div>

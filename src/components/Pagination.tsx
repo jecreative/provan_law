@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styles from '../styles/News.module.css'
 
 const Pagination: React.FC<{
   postsPerSection: number
@@ -15,11 +15,13 @@ const Pagination: React.FC<{
   return (
     <>
       {pageNumbers.map((number) => (
-        <li key={number} className='section-item'>
+        <li key={number}>
           <div
             onClick={() => paginate(number)}
             className={
-              currentPosts === number ? 'paginate activePosts' : 'paginate'
+              currentPosts === number
+                ? styles.activePagination
+                : styles.paginate
             }
           >
             {number}

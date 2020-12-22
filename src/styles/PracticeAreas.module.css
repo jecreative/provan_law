@@ -121,7 +121,7 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
-  .services .services_header h3 {
+  .services .services_header h1 {
     font-size: 2rem;
     color: #414141;
     margin-bottom: 0.5rem;
@@ -195,7 +195,7 @@
   .services .services_header {
     margin: 2rem 0;
   }
-  .services .services_header h3 {
+  .services .services_header h1 {
     font-size: 1.4rem;
     color: #414141;
     margin-bottom: 0.5rem;
