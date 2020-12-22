@@ -11,7 +11,7 @@ const Contact = () => {
   const [message, setMessage] = useState('')
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id='contact'>
       <div
         className={styles.contact_left}
         style={{ backgroundImage: 'url("images/contact_bg.webp")' }}

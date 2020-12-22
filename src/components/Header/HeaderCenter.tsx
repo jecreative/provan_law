@@ -53,7 +53,6 @@ const HeaderCenter = ({ router }) => {
               spy={true}
               smooth={true}
               duration={600}
-              exact='true'
               offset={20}
             >
               <li>Free Consultation</li>
@@ -81,7 +80,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
@@ -95,7 +93,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
@@ -109,7 +106,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
@@ -123,7 +119,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={0}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
@@ -137,7 +132,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={0}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>
@@ -151,7 +145,6 @@ const HeaderCenter = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={30}
           >
             <li onClick={() => setMobileNav(!mobileNav)}>

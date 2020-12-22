@@ -52,7 +52,7 @@ const News: React.FC<{ posts: Post[] }> = (props) => {
   const paginate = (pageNumber): any => setCurrentPosts(pageNumber)
 
   return (
-    <section className={styles.news}>
+    <section className={styles.news} id='news'>
       <div className={styles.news_header}>
         <div className={styles.news_header_left}>
           <h1>Recent News</h1>

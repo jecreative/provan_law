@@ -9,16 +9,18 @@ const HeaderBottom = ({ router }) => {
       <ul>
         <Link href='/'>
           <li
-            className={router.pathname === '/' ? 'active' : ''}
             style={{ cursor: 'pointer' }}
+            className={router.pathname === '/' && styles.active}
           >
-            HOME
+            <a>HOME</a>
           </li>
         </Link>
 
         {router.pathname.includes('news') ? (
           <Link href='/#about'>
-            <li>ABOUT US</li>
+            <li>
+              <a>ABOUT US</a>
+            </li>
           </Link>
         ) : (
           <ScrollLink
@@ -26,7 +28,6 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
           >
             <li>ABOUT US</li>
@@ -35,7 +36,9 @@ const HeaderBottom = ({ router }) => {
 
         {router.pathname.includes('news') ? (
           <Link href='/#services'>
-            <li>PRACTICE AREAS</li>
+            <li>
+              <a>PRACTICE AREAS</a>
+            </li>
           </Link>
         ) : (
           <ScrollLink
@@ -43,7 +46,6 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
           >
             <li>PRACTICE AREAS</li>
@@ -52,7 +54,9 @@ const HeaderBottom = ({ router }) => {
 
         {router.pathname.includes('news') ? (
           <Link href='/#attorneys'>
-            <li>ATTORNEYS</li>
+            <li>
+              <a>ATTORNEYS</a>
+            </li>
           </Link>
         ) : (
           <ScrollLink
@@ -60,7 +64,6 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-30}
           >
             <li>ATTORNEYS</li>
@@ -70,7 +73,7 @@ const HeaderBottom = ({ router }) => {
         {router.pathname.includes('news') ? (
           <Link href='/#news'>
             <li className={router.pathname.includes('news') ? 'active' : ''}>
-              NEWS
+              <a> NEWS</a>
             </li>
           </Link>
         ) : (
@@ -79,7 +82,6 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-80}
           >
             <li>NEWS</li>
@@ -88,7 +90,9 @@ const HeaderBottom = ({ router }) => {
 
         {router.pathname.includes('news') ? (
           <Link href='/#contact'>
-            <li>CONTACT</li>
+            <li>
+              <a>CONTACT</a>
+            </li>
           </Link>
         ) : (
           <ScrollLink
@@ -96,7 +100,6 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={20}
           >
             <li>CONTACT</li>

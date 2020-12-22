@@ -26,7 +26,6 @@ const Hero = () => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
             offset={-25}
             className={styles.hero_btn01}
           >
@@ -37,8 +36,7 @@ const Hero = () => {
             spy={true}
             smooth={true}
             duration={600}
-            exact='true'
-            offset={-25}
+            offset={0}
             className={styles.hero_btn02}
           >
             Contact Us Now

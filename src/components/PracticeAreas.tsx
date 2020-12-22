@@ -2,7 +2,7 @@ import styles from '../styles/PracticeAreas.module.css'
 
 const PracticeAreas = () => {
   return (
-    <section className={styles.practice_areas}>
+    <section className={styles.practice_areas} id='services'>
       <div className={styles.info_card}>
         <div className={styles.info_card_left}>
           <h3>

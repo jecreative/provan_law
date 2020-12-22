@@ -19,12 +19,11 @@ const ExperienceBanner = () => {
         </p>
 
         <ScrollLink
-          to='services'
+          to='contact'
           spy={true}
           smooth={true}
           duration={600}
-          exact='true'
-          offset={-25}
+          offset={0}
           className={styles.experience_btn}
         >
           Free Case Evaluation

@@ -37,6 +37,6 @@ img {
 
 .active {
   color: #c24343 !important;
-  border-bottom: 2px solid #c24343;
+  /* border-bottom: 2px solid #c24343; */
   cursor: pointer;
 }

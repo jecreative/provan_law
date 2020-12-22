@@ -1,7 +1,6 @@
 .contact {
   height: 100%;
   display: flex;
-  margin-bottom: 100px;
 }
 @media (max-width: 768px) {
   .contact {

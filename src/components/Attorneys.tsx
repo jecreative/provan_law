@@ -25,7 +25,7 @@ const Attorneys = () => {
   const [cardOverlay04, setCardOverlay04] = useState(false)
 
   return (
-    <section className={styles.attorneys}>
+    <section className={styles.attorneys} id='attorneys'>
       <div className={styles.attorneys_header}>
         <h1>Our Attorneys</h1>
         <hr />
