@@ -6,16 +6,21 @@ const ExperienceBanner = () => {
   return (
     <section
       className={styles.experience_banner}
-      style={{ backgroundImage: 'url("images/experience_banner.webp")' }}
+      style={{ backgroundImage: 'url("images/experience_banner.jpg")' }}
     >
       <div className={styles.overlay}></div>
       <div className={styles.experience_content}>
-        <h1>30 Years of Experience In Various Cases</h1>
+        <h1>
+          30 Years of Experience In State and Federal Courts Throughout
+          California
+        </h1>
+
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta omnis
-          error ea sunt, delectus, rem accusantium veniam, aliquid odio eos eum
-          ducimus ratione doloremque iste. Molestiae alias nisi maxime
-          doloribus?
+          Innovative, full service civil litigation law firm. We are a small
+          firm that provides legal services with personal attention and
+          competitive rates. Our success has come with offering a real
+          alternative to the status quo of the legal community to clients who
+          demand premium legal service and value.
         </p>
 
         <ScrollLink

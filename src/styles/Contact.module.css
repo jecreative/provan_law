@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(36, 78, 114, 0.769);
+  background-color: rgba(0, 88, 135, 0.591);
   z-index: 1;
 }
 .contact_left_content {
@@ -75,7 +75,7 @@
 }
 
 .contact_right {
-  background: #e4edf3;
+  background: rgb(247, 249, 250);
   flex-basis: 50%;
   height: 100%;
   padding: 5rem 7.5rem;
@@ -128,9 +128,9 @@
 }
 
 .contact_right button {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   padding: 12.5px 15px;
-  background: #c24343;
+  background: #0082c8;
   color: white;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -140,7 +140,7 @@
 }
 
 .contact_right button:hover {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   background: transparent;
-  color: #c24343;
+  color: #0082c8;
 }

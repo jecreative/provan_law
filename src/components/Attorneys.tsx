@@ -38,7 +38,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person03-sm.webp")' }}
+            style={{ backgroundImage: 'url("images/person03-sm.jpg")' }}
           >
             <div
               className={
@@ -55,7 +55,7 @@ const Attorneys = () => {
           </div>
 
           <div className={styles.attorney_card_bottom}>
-            <h3>John Doe</h3>
+            <h3>Mike Provan</h3>
             <p>Attorney</p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person01-sm.webp")' }}
+            style={{ backgroundImage: 'url("images/person01-sm.jpg")' }}
           >
             <div
               className={
@@ -82,8 +82,8 @@ const Attorneys = () => {
             </div>
           </div>
           <div className={styles.attorney_card_bottom}>
-            <h3>Jane Doe</h3>
-            <p>Legal Secretary</p>
+            <h3>Jane Provan</h3>
+            <p>Office Manager</p>
           </div>
         </div>
 
@@ -94,7 +94,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person02-sm.webp")' }}
+            style={{ backgroundImage: 'url("images/person02-sm.jpg")' }}
           >
             <div
               className={
@@ -111,8 +111,8 @@ const Attorneys = () => {
           </div>
 
           <div className={styles.attorney_card_bottom}>
-            <h3>Sam Smith</h3>
-            <p>Office Manager</p>
+            <h3>Gretchen Esguerra</h3>
+            <p>Legal Assistant</p>
           </div>
         </div>
 
@@ -123,7 +123,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person04-sm.webp")' }}
+            style={{ backgroundImage: 'url("images/person04-sm.jpg")' }}
           >
             <div
               className={
@@ -139,8 +139,8 @@ const Attorneys = () => {
             </div>
           </div>
           <div className={styles.attorney_card_bottom}>
-            <h3>Rick Sanchez</h3>
-            <p>Legal Assistant</p>
+            <h3>Christina Hernandez</h3>
+            <p>Legal Secretary</p>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@
 
 .header_top {
   height: 6vh;
-  background-color: #2f4c65;
+  background-color: #0082c8;
   width: 100%;
   padding: 0 3rem;
   display: flex;
@@ -88,7 +88,7 @@
 }
 .headerTop_right > i:hover {
   background: white;
-  color: #2f4c65;
+  color: #0082c8;
 }
 
 /* Header Center (Desktop/Tablet) */
@@ -149,22 +149,22 @@
   height: 40px;
   display: grid;
   place-items: center;
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   border-radius: 50%;
   font-size: 1.5rem;
-  color: #c24343;
+  color: #0082c8;
   cursor: pointer;
   transition: 0.1s ease-in-out;
   margin: 0 1rem;
 }
 
 .headerCenter_right i:hover {
-  background: #c24343;
+  background: #0082c8;
   color: white;
 }
 
 .headerCenter_right .info p {
-  color: #2f4c65;
+  color: #0082c8;
   font-weight: 500;
   font-size: 1.1rem;
 }
@@ -178,10 +178,10 @@
 }
 
 .headerCenter_right .consultBtn li {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   padding: 12.5px 15px;
   margin-left: 2.5rem;
-  background: #c24343;
+  background: #0082c8;
   color: white;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -189,9 +189,9 @@
   cursor: pointer;
 }
 .headerCenter_right .consultBtn li:hover {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   background: white;
-  color: #c24343;
+  color: #0082c8;
 }
 
 /* Header Bottom */
@@ -227,11 +227,11 @@
 }
 
 .main_nav ul li:hover {
-  border-bottom: 2px solid #c24343;
-  color: #c24343;
+  border-bottom: 2px solid #0082c8;
+  color: #0082c8;
 }
 .main_nav ul li a:hover {
-  color: #c24343;
+  color: #0082c8;
 }
 
 .main_nav ul li a {
@@ -245,8 +245,8 @@
   pointer-events: all;
 }
 .active {
-  border-bottom: 2px solid #c24343;
-  color: #c24343 !important;
+  border-bottom: 2px solid #0082c8;
+  color: #0082c8 !important;
 }
 
 /*  Mobile Nav & Toggle */
@@ -342,7 +342,7 @@
 }
 .mobile_nav_active ul li:hover,
 .mobile_nav ul li:hover {
-  background-color: rgba(194, 67, 67, 0.228);
+  background-color: rgba(72, 191, 255, 0.386);
 }
 
 .mobile_nav_active ul li i,
@@ -353,6 +353,6 @@
   place-items: center;
   border-radius: 50%;
   margin-right: 1rem;
-  background-color: #c24343;
+  background-color: #0082c8;
   color: white;
 }

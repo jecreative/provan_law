@@ -14,7 +14,7 @@ const Contact = () => {
     <section className={styles.contact} id='contact'>
       <div
         className={styles.contact_left}
-        style={{ backgroundImage: 'url("images/contact_bg.webp")' }}
+        style={{ backgroundImage: 'url("images/contact_bg.jpg")' }}
       >
         <div className={styles.overlay}></div>
         <div className={styles.contact_left_content}>
@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
       </div>
       <div className={styles.contact_right}>
-        <h3>Free Consultation</h3>
+        <h3>Contact Us</h3>
 
         <form onSubmit={handleSubmit}>
           <div className={styles.form_group}>

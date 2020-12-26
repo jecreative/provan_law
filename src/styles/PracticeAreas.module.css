@@ -60,7 +60,7 @@
   }
 }
 .info_card i {
-  color: #c24343;
+  color: #0082c8;
   margin-right: 0.5rem;
 }
 .info_card h3 {
@@ -130,7 +130,7 @@
   .services .services_header hr {
     width: 150px;
     border: none;
-    background: #c24343;
+    background: #0082c8;
     height: 2px;
   }
   .services_body {
@@ -159,9 +159,9 @@
   .service_item .service_item_top i {
     font-size: 1.5rem;
     border-radius: 5px;
-    border: 1px solid #c24343;
+    border: 1px solid #0082c8;
     padding: 10px;
-    color: #c24343;
+    color: #0082c8;
     margin-right: 0.5rem;
   }
 
@@ -204,7 +204,7 @@
   .services .services_header hr {
     width: 150px;
     border: none;
-    background: #c24343;
+    background: #0082c8;
     height: 2px;
   }
   .services_body {
@@ -234,7 +234,7 @@
     border-radius: 5px;
     border: 1px solid #939393;
     padding: 10px;
-    color: #c24343;
+    color: #0082c8;
     margin-right: 0.5rem;
   }
 

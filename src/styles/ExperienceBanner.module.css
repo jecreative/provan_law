@@ -45,7 +45,7 @@
 }
 
 .experience_content h1 {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   margin-bottom: 1.5rem;
   text-shadow: 0 0 10px rgba(34, 54, 72, 0.523), 0 0 6px rgba(34, 54, 72, 0.523);
 }
@@ -56,9 +56,9 @@
   font-weight: 300;
 }
 .experience_btn {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   padding: 12.5px 15px;
-  background: #c24343;
+  background: #0082c8;
   color: white !important;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -68,5 +68,5 @@
 .experience_btn:hover {
   border: 2px solid white;
   background: white;
-  color: #c24343 !important;
+  color: #0082c8 !important;
 }

@@ -42,7 +42,7 @@ const HeaderCenter = ({ router }) => {
             <span>Sat & Sun Closed</span>
           </p>
         </div>
-        <div className={styles.consultBtn}>
+        {/* <div className={styles.consultBtn}>
           {router.pathname.includes('news') ? (
             <Link href='/#contact'>
               <li>Free Consultation</li>
@@ -58,7 +58,7 @@ const HeaderCenter = ({ router }) => {
               <li>Free Consultation</li>
             </ScrollLink>
           )}
-        </div>
+        </div> */}
       </div>
       {/* Mobile Nav Toggle */}
       <div

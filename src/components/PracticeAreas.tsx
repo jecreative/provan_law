@@ -44,7 +44,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-shield-alt'></i>
-              <h3>Insurance Defense</h3>
+              <h3>Personal Injury</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>
@@ -56,7 +56,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-car-crash'></i>
-              <h3>Car Accident</h3>
+              <h3>Business Litigation</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>
@@ -68,7 +68,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-hard-hat'></i>
-              <h3>Construction Accident</h3>
+              <h3>Contract Law</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>
@@ -80,7 +80,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-gavel'></i>
-              <h3>Employment Law</h3>
+              <h3>Insurance Litigation</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>
@@ -92,7 +92,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-house-user'></i>
-              <h3>Home Owners Liability</h3>
+              <h3>Premises Liability</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>
@@ -104,7 +104,7 @@ const PracticeAreas = () => {
           <div className={styles.service_item}>
             <div className={styles.service_item_top}>
               <i className='fas fa-parachute-box'></i>
-              <h3>Product Damage</h3>
+              <h3>Risk Managment</h3>
             </div>
             <div className={styles.service_item_bottom}>
               <p>

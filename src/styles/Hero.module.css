@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(34, 54, 72, 0.523);
+  background-color: rgba(34, 54, 72, 0.5);
   z-index: 1;
 }
 
@@ -60,6 +60,7 @@
   line-height: 1.6rem;
   margin-bottom: 1.5rem;
   font-weight: 300;
+  letter-spacing: 0.04rem;
 }
 
 .hero_btns {
@@ -69,10 +70,10 @@
 }
 
 .hero_btn01 {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   padding: 12.5px 15px;
   margin-right: 2.5rem;
-  background: #c24343;
+  background: #0082c8;
   color: white;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -83,7 +84,7 @@
 .hero_btn01:hover {
   border: 2px solid white;
   background: white;
-  color: #c24343;
+  color: #0082c8;
 }
 
 .hero_btn02 {
@@ -91,7 +92,7 @@
   padding: 12.5px 15px;
   margin-right: 2.5rem;
   background: white;
-  color: #c24343;
+  color: #0082c8;
   font-size: 0.9rem;
   border-radius: 2px;
   transition: all 0.1s ease-in-out;
@@ -99,8 +100,8 @@
 }
 
 .hero_btn02:hover {
-  border: 2px solid #c24343;
-  background: #c24343;
+  border: 2px solid #0082c8;
+  background: #0082c8;
   color: white;
 }
 

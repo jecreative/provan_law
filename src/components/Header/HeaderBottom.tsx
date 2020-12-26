@@ -16,7 +16,7 @@ const HeaderBottom = ({ router }) => {
           </li>
         </Link>
 
-        {router.pathname.includes('news') ? (
+        {/* {router.pathname.includes('news') ? (
           <Link href='/#about'>
             <li>
               <a>ABOUT US</a>
@@ -32,7 +32,13 @@ const HeaderBottom = ({ router }) => {
           >
             <li>ABOUT US</li>
           </ScrollLink>
-        )}
+        )} */}
+
+        {/* <Link href='/about'>
+          <li>
+            <a>ABOUT US</a>
+          </li>
+        </Link> */}
 
         {router.pathname.includes('news') ? (
           <Link href='/#services'>

@@ -37,7 +37,7 @@
 .news_header_left hr {
   width: 125px;
   border: none;
-  background: #c24343;
+  background: #0082c8;
   height: 2px;
   margin-bottom: 3rem;
 }
@@ -115,9 +115,9 @@
   margin-bottom: 0.75rem;
 }
 .card_bottom .news_btn {
-  border: 2px solid #c24343;
+  border: 2px solid #0082c8;
   background: white;
-  color: #c24343;
+  color: #0082c8;
   padding: 12.5px 15px;
   font-size: 0.9rem;
   border-radius: 2px;
@@ -126,15 +126,15 @@
 }
 
 .card_bottom .news_btn:hover {
-  border: 2px solid #c24343;
-  background: #c24343;
+  border: 2px solid #0082c8;
+  background: #0082c8;
   color: white;
 }
 
 /* Pagination */
 .paginate {
-  border: 1px solid #2f4c65;
-  color: #2f4c65;
+  border: 1px solid #0082c8;
+  color: #0082c8;
   width: 30px;
   height: 30px;
   display: grid;
@@ -143,19 +143,19 @@
   cursor: pointer;
 }
 .paginate:hover {
-  background: #2f4c65;
+  background: #0082c8;
   color: white;
 }
 .activePagination {
-  border: 1px solid #2f4c65;
-  color: #2f4c65;
+  border: 1px solid #0082c8;
+  color: #0082c8;
   width: 30px;
   height: 30px;
   display: grid;
   place-items: center;
   margin: 0 0.25rem;
   cursor: pointer;
-  background: #2f4c65;
+  background: #0082c8;
   color: white !important;
 }
 
