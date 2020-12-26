@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 
 import Hero from '../components/Hero'
-import Info from '../components/About/Info'
 import PracticeAreas from '../components/PracticeAreas'
 import ExperienceBanner from '../components/ExperienceBanner'
 import Attorneys from '../components/Attorneys'
