@@ -6,12 +6,14 @@ import styles from '../styles/Hero.module.css'
 const Hero = () => {
   return (
     <section
-      style={{ backgroundImage: 'url("images/cityscape08.jpg")' }}
+      style={{
+        backgroundImage: 'url("images/cityscape.jpg")',
+      }}
       id={styles.hero}
     >
       <div className={styles.overlay}></div>
       <div className={styles.hero_content}>
-        <h2>Legal Insurance Defense</h2>
+        <h2>Full Service Civil Litigation</h2>
         <h1>
           Experienced insurance law{' '}
           <span>assistance in Southern California</span>

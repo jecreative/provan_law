@@ -2,6 +2,7 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 
 import Hero from '../components/Hero'
+import About from '../components/About'
 import PracticeAreas from '../components/PracticeAreas'
 import ExperienceBanner from '../components/ExperienceBanner'
 import Attorneys from '../components/Attorneys'
@@ -41,12 +42,13 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <Hero />
+      <About />
       {/* <Info /> */}
       <PracticeAreas />
       <ExperienceBanner />
-      <Attorneys />
       <StatusBanner />
-      <News posts={posts} />
+      <Attorneys />
+      {/* <News posts={posts} /> */}
       <Contact />
     </>
   )

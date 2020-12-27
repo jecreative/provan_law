@@ -16,7 +16,7 @@ const HeaderBottom = ({ router }) => {
           </li>
         </Link>
 
-        {/* {router.pathname.includes('news') ? (
+        {router.pathname.includes('news') ? (
           <Link href='/#about'>
             <li>
               <a>ABOUT US</a>
@@ -32,7 +32,7 @@ const HeaderBottom = ({ router }) => {
           >
             <li>ABOUT US</li>
           </ScrollLink>
-        )} */}
+        )}
 
         {/* <Link href='/about'>
           <li>
@@ -76,7 +76,7 @@ const HeaderBottom = ({ router }) => {
           </ScrollLink>
         )}
 
-        {router.pathname.includes('news') ? (
+        {/* {router.pathname.includes('news') ? (
           <Link href='/#news'>
             <li className={router.pathname.includes('news') ? 'active' : ''}>
               <a> NEWS</a>
@@ -92,7 +92,7 @@ const HeaderBottom = ({ router }) => {
           >
             <li>NEWS</li>
           </ScrollLink>
-        )}
+        )} */}
 
         {router.pathname.includes('news') ? (
           <Link href='/#contact'>

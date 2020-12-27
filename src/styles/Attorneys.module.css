@@ -2,6 +2,7 @@
   height: 100%;
   width: 100%;
   padding: 5rem 10rem;
+  margin-bottom: 50px;
 }
 @media (max-width: 1130px) {
   .attorneys {

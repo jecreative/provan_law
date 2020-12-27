@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Link as ScrollLink } from 'react-scroll'
@@ -7,6 +7,14 @@ import styles from '../../styles/Header.module.css'
 
 const HeaderCenter = ({ router }) => {
   const [mobileNav, setMobileNav] = useState(false)
+
+  useEffect(() => {
+    if (mobileNav) {
+      document.body.style.overflow = 'hidden'
+    } else if (!mobileNav) {
+      document.body.style.overflow = 'auto'
+    }
+  }, [mobileNav])
 
   return (
     <div className={styles.header_center}>
@@ -127,7 +135,7 @@ const HeaderCenter = ({ router }) => {
             </li>
           </ScrollLink>
 
-          <ScrollLink
+          {/* <ScrollLink
             to='news'
             spy={true}
             smooth={true}
@@ -138,7 +146,7 @@ const HeaderCenter = ({ router }) => {
               <i className='fab fa-microblog'></i>
               News
             </li>
-          </ScrollLink>
+          </ScrollLink> */}
 
           <ScrollLink
             to='contact'

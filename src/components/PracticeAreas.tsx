@@ -1,39 +1,10 @@
 import styles from '../styles/PracticeAreas.module.css'
+import InfoCard from '../components/InfoCard'
 
 const PracticeAreas = () => {
   return (
     <section className={styles.practice_areas} id='services'>
-      <div className={styles.info_card}>
-        <div className={styles.info_card_left}>
-          <h3>
-            <i className='fas fa-check-square'></i> Get Legal Advice
-          </h3>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla
-            cumque accusamus tempore rem suscipit?
-          </p>
-        </div>
-        <div className={styles.info_card_center}>
-          <h3>
-            <i className='fas fa-check-square'></i> Expert Lawyers
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla
-            cumque accusamus tempore rem suscipit?
-          </p>
-        </div>
-        <div className={styles.info_card_right}>
-          <h3>
-            <i className='fas fa-check-square'></i> Great Rates
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nulla
-            cumque accusamus tempore rem suscipit?
-          </p>
-        </div>
-      </div>
-
+      {/* <InfoCard /> */}
       <div className={styles.services}>
         <div className={styles.services_header}>
           <h1>Our Practice Areas</h1>

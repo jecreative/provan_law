@@ -14,7 +14,7 @@ const Contact = () => {
     <section className={styles.contact} id='contact'>
       <div
         className={styles.contact_left}
-        style={{ backgroundImage: 'url("images/contact_bg.jpg")' }}
+        style={{ backgroundImage: 'url("images/cityscape03.jpg")' }}
       >
         <div className={styles.overlay}></div>
         <div className={styles.contact_left_content}>

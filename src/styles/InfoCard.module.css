@@ -1,0 +1,70 @@
+/* Info Card */
+.info_container {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.info_card {
+  width: 70%;
+  height: 200px;
+  position: absolute;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 auto;
+  transform: translateY(-40px);
+}
+@media (max-width: 920px) {
+  .info_card,
+  .info_container {
+    display: none;
+  }
+}
+.info_card i {
+  color: #0082c8;
+  margin-right: 0.5rem;
+}
+.info_card h3 {
+  color: #414141;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.info_card p {
+  color: #505050;
+  font-size: 0.9rem;
+}
+.info_card .info_card_left {
+  border-right: 1px solid #9f9f9f;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.info_card .info_card_center {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.info_card .info_card_right {
+  border-left: 1px solid #9f9f9f;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
