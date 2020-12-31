@@ -7,21 +7,21 @@ const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: 'url("images/cityscape.jpg")',
+        backgroundImage: 'url("images/cityscape08.jpg")',
       }}
       id={styles.hero}
     >
       <div className={styles.overlay}></div>
       <div className={styles.hero_content}>
-        <h2>Full Service Civil Litigation</h2>
+        <h2>Insurance Defense Firm</h2>
         <h1>
           Experienced insurance law{' '}
           <span>assistance in Southern California</span>
         </h1>
         <p>
-          The <strong>Provan Law Firm</strong> is dedicated to providing clients
-          with legal work of the highest caliber in a responsive, efficient
-          manner. The firm's core values are{' '}
+          <strong>Provan Law</strong> is dedicated to providing clients with
+          legal work of the highest caliber in a responsive, efficient manner.
+          The firm's core values are{' '}
           <strong>
             client service, integrity, innovation, and excellence in practice
           </strong>

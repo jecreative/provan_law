@@ -28,17 +28,11 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            offset={-25}
+            offset={-125}
           >
             <li>ABOUT US</li>
           </ScrollLink>
         )}
-
-        {/* <Link href='/about'>
-          <li>
-            <a>ABOUT US</a>
-          </li>
-        </Link> */}
 
         {router.pathname.includes('news') ? (
           <Link href='/#services'>
@@ -52,7 +46,7 @@ const HeaderBottom = ({ router }) => {
             spy={true}
             smooth={true}
             duration={600}
-            offset={-25}
+            offset={-80}
           >
             <li>PRACTICE AREAS</li>
           </ScrollLink>

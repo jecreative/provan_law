@@ -1,7 +1,9 @@
 #hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 80%;
+  /* background-position: 0 80%; */
+  background-position: 0 40%;
+
   height: 600px;
   position: relative;
   padding: 0 15rem;
@@ -16,7 +18,11 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(17, 51, 80, 0.75);
+  /* background-color: rgba(0, 130, 200, 0.2); */
+  /* background-color: rgba(0, 39, 60, 0.434); */
+  /* background-color: #00000076; */
+  /* background-color: rgba(0, 0, 0, 0.481); */
+  background-color: rgba(0, 32, 50, 0.502);
   z-index: 1;
 }
 
@@ -59,8 +65,9 @@
   font-size: 1.1rem;
   line-height: 1.6rem;
   margin-bottom: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.04rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .hero_btns {

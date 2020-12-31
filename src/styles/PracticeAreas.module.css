@@ -2,10 +2,10 @@
   width: 100%;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 3rem 13.25rem;
   height: 100%;
+  min-height: 600px;
   /* margin-bottom: 200px; */
   background: rgb(247, 249, 250);
 }

@@ -20,7 +20,7 @@ const About = () => {
           <hr />
           {/* <h2>Client Service, Integrity, Innovation</h2> */}
           <p>
-            The <strong>Provan Law Firm</strong> is an innovative,{' '}
+            <strong>Provan Law</strong> is an innovative,{' '}
             <strong>full service civil litigation</strong> law firm. Our
             Attorneys have combined experience of over 30 years providing
             excellent service to our clients in the state and federal courts
@@ -31,11 +31,11 @@ const About = () => {
             value.
             <br />
             <br />
-            The attorneys at The Provan Law Firm practice in the areas of
-            personal injury, contract law, and insurance litigation, including
-            bad faith, premises liability, and risk management counseling. The
-            firm represents individuals, and well as large and small businesses
-            from across the United States. Our attorneys have excellent academic
+            The attorneys at Provan Law practice in the areas of personal
+            injury, contract law, and insurance litigation, including bad faith,
+            premises liability, and risk management counseling. The firm
+            represents individuals, and well as large and small businesses from
+            across the United States. Our attorneys have excellent academic
             credentials and legal experience. We advise our clients how to best
             pursue their interests and avoid unnecessary costs and litigation.
             When litigation is unavoidable, the experienced attorneys at The

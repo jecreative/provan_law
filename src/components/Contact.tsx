@@ -14,7 +14,7 @@ const Contact = () => {
     <section className={styles.contact} id='contact'>
       <div
         className={styles.contact_left}
-        style={{ backgroundImage: 'url("images/cityscape03.jpg")' }}
+        style={{ backgroundImage: 'url("images/test.jpg")' }}
       >
         <div className={styles.overlay}></div>
         <div className={styles.contact_left_content}>
@@ -28,10 +28,16 @@ const Contact = () => {
               />
             </a>
           </Link>
-          <h2>Free Call Us</h2>
-          <p>If you would like to speak to someone directly</p>
+          {/* <h2>Free Call Us</h2> */}
+          {/* <p>
+            If you would like to speak to someone directly contact us by phone
+          </p> */}
           <a className={styles.phone} href='tel:6192343908'>
             <i className='fas fa-mobile-alt'></i> 619.234.3908
+          </a>
+
+          <a className={styles.phone} href='mailto:mprovan@provanlaw.com'>
+            <i className='fas fa-envelope'></i>mprovan@provanlaw.com
           </a>
         </div>
       </div>
