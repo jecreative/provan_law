@@ -38,7 +38,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person03-sm.jpg")' }}
+            style={{ backgroundImage: 'url("images/lawyer01.jpg")' }}
           >
             <div
               className={
@@ -66,7 +66,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person01-sm.jpg")' }}
+            style={{ backgroundImage: 'url("images/lawyer02.jpg")' }}
           >
             <div
               className={
@@ -94,7 +94,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person02-sm.jpg")' }}
+            style={{ backgroundImage: 'url("images/lawyer03.jpg")' }}
           >
             <div
               className={
@@ -123,7 +123,7 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/person04-sm.jpg")' }}
+            style={{ backgroundImage: 'url("/images/lawyer04.jpg")' }}
           >
             <div
               className={

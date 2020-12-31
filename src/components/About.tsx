@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import styles from '../styles/About.module.css'
 import InfoCard from '../components/InfoCard'
 
@@ -6,19 +8,27 @@ const About = () => {
     <>
       <InfoCard />
       <section id='about' className={styles.about}>
+        <div className={styles.about_image}>
+          <Image
+            src='/images/buildings.svg'
+            layout='fill'
+            alt='Image of Downtown San Diego'
+          />
+        </div>
         <div className={styles.about_content}>
           <h1>About Us</h1>
           <hr />
           {/* <h2>Client Service, Integrity, Innovation</h2> */}
           <p>
-            The <strong>Provan Law Firm</strong> is an innovative, full service
-            civil litigation law firm. Our Attorneys have combined experience of
-            over 30 years providing excellent service to our clients in the
-            state and federal courts throughout California. We are a small firm
-            that provides legal services with personal attention and competitive
-            rates. Our success has come with offering a real alternative to the
-            status quo of the legal community to clients who demand premium
-            legal service and value.
+            The <strong>Provan Law Firm</strong> is an innovative,{' '}
+            <strong>full service civil litigation</strong> law firm. Our
+            Attorneys have combined experience of over 30 years providing
+            excellent service to our clients in the state and federal courts
+            throughout California. We are a small firm that provides legal
+            services with personal attention and competitive rates. Our success
+            has come with offering a real alternative to the status quo of the
+            legal community to clients who demand premium legal service and
+            value.
             <br />
             <br />
             The attorneys at The Provan Law Firm practice in the areas of

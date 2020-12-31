@@ -8,7 +8,7 @@ import styles from '../../styles/Header.module.css'
 const Header: React.FC<{}> = () => {
   const router = useRouter()
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id='header'>
       <HeaderTop />
       <HeaderCenter router={router} />
       <HeaderBottom router={router} />

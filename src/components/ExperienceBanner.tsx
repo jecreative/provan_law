@@ -6,7 +6,7 @@ const ExperienceBanner = () => {
   return (
     <section
       className={styles.experience_banner}
-      style={{ backgroundImage: 'url("images/experience_banner.jpg")' }}
+      style={{ backgroundImage: 'url("images/hands_shaking.jpg")' }}
     >
       <div className={styles.overlay}></div>
       <div className={styles.experience_content}>
