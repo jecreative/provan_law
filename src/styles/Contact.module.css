@@ -145,3 +145,17 @@
   background: transparent;
   color: #0082c8;
 }
+@media (max-width: 500px) {
+  .phone {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    color: #fff1f1;
+  }
+  .phone:hover {
+    opacity: 50%;
+  }
+  .phone i {
+    margin-right: 1rem;
+  }
+}
