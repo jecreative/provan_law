@@ -38,9 +38,9 @@ const About = () => {
             across the United States. Our attorneys have excellent academic
             credentials and legal experience. We advise our clients how to best
             pursue their interests and avoid unnecessary costs and litigation.
-            When litigation is unavoidable, the experienced attorneys at The
-            Provan Clune Law Firm are experts at aggressively pursuing our
-            clients' interests in mediation, arbitration and at trial.
+            When litigation is unavoidable, the experienced attorneys at Provan
+            Law are experts at aggressively pursuing our clients' interests in
+            mediation, arbitration and at trial.
           </p>
         </div>
       </section>

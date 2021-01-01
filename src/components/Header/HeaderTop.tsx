@@ -12,11 +12,11 @@ const HeaderTop = () => {
           <a href='mailto:mprovan@provanlaw.com'>mprovan@provanlaw.com</a>
         </p>
       </div>
-      <div className={styles.headerTop_right}>
+      {/* <div className={styles.headerTop_right}>
         <p>Find us on social media</p>
         <i className='fab fa-facebook-f'></i>
         <i className='fab fa-instagram'></i>
-      </div>
+      </div> */}
     </div>
   )
 }

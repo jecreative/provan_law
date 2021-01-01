@@ -12,7 +12,9 @@
 }
 
 .footer_left {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+  flex-basis: 100%;
+  text-align: center;
 }
 
 .footer_right {

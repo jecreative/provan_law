@@ -38,7 +38,11 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/lawyer01.jpg")' }}
+            // style={{ backgroundImage: 'url("images/lawyer01.jpg")' }}
+            style={{
+              backgroundImage:
+                'url("https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y")',
+            }}
           >
             <div
               className={
@@ -66,7 +70,11 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/lawyer02.jpg")' }}
+            // style={{ backgroundImage: 'url("images/lawyer02.jpg")' }}
+            style={{
+              backgroundImage:
+                'url("https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y")',
+            }}
           >
             <div
               className={
@@ -94,7 +102,11 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("images/lawyer03.jpg")' }}
+            // style={{ backgroundImage: 'url("images/lawyer03.jpg")' }}
+            style={{
+              backgroundImage:
+                'url("https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y")',
+            }}
           >
             <div
               className={
@@ -123,7 +135,11 @@ const Attorneys = () => {
         >
           <div
             className={styles.attorney_card_top}
-            style={{ backgroundImage: 'url("/images/lawyer04.jpg")' }}
+            // style={{ backgroundImage: 'url("/images/lawyer04.jpg")' }}
+            style={{
+              backgroundImage:
+                'url("https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y")',
+            }}
           >
             <div
               className={

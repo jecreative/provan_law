@@ -37,10 +37,10 @@
 }
 
 .headerTop_left {
-  flex: 0.7;
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   height: 100%;
 }
 .headerTop_left > i {
