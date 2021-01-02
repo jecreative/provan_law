@@ -10,17 +10,13 @@ const ExperienceBanner = () => {
     >
       <div className={styles.overlay}></div>
       <div className={styles.experience_content}>
-        <h1>
-          30 Years of Experience In State and Federal Courts Throughout
-          California
-        </h1>
+        <h1>30 Years of Experience In State and Federal Courts</h1>
 
         <p>
-          Innovative, full service civil litigation law firm. We are a small
-          firm that provides legal services with personal attention and
-          competitive rates. Our success has come with offering a real
-          alternative to the status quo of the legal community to clients who
-          demand premium legal service and value.
+          We are a small firm that provides legal services with personal
+          attention and competitive rates. Our success has come with offering a
+          real alternative to the status quo of the legal community to clients
+          who demand premium legal service and value.
         </p>
 
         {/* <ScrollLink

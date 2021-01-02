@@ -90,7 +90,7 @@ const Attorneys = () => {
             </div>
           </div>
           <div className={styles.attorney_card_bottom}>
-            <h3>Jane Provan</h3>
+            <h3>Jan Provan</h3>
             <p>Office Manager</p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 .experience_banner {
-  height: 50vh;
-  min-height: 400px;
-  /* margin: 100px 0; */
+  height: 40vh;
+  min-height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -400px;
@@ -45,7 +44,7 @@
 }
 .experience_content p {
   font-size: 1.1rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
 }
@@ -67,9 +66,9 @@
 @media (max-width: 500px) {
   .experience_banner {
     padding: 0 1rem;
-    height: 50vh;
-    min-height: 600px;
-    background-position: -200px 0px;
+    height: 40vh;
+    min-height: 450px;
+    background-position: -100px 0px;
   }
   .experience_content h1 {
     font-size: 2.1rem;
